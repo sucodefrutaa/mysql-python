@@ -19,13 +19,13 @@ CREATE TABLE tamanhos (
     
 CREATE TABLE tecidos (
 	id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(45)
+    tipo VARCHAR(45)
     );
 
     
 CREATE TABLE cores (
 	id INT PRIMARY KEY AUTO_INCREMENT,
-    tipo VARCHAR (45)
+    nome VARCHAR (45)
     );
    
 

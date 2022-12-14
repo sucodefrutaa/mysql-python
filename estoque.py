@@ -424,7 +424,7 @@ def listar_blusas():
     print('| {:^10} | {:^10} | {:^10} | {:^10} |'.format('id_blusas', 'id_tamanho', 'id_tecido', 'id_cor'))
     print("-" * 22)
     for id_blusas, id_tamanho, id_tecido, id_cor in myresult:
-            print('| {:^10} | {:^10} | {:^10} | {:^10} |'.format(id_blusas, id_tamanho, id_tecido, id_cor))
+            print('| {:^10} | {:^10} | {:^10} | {:^10} |'.format(str(id_blusas), str(id_tamanho), str(id_tecido), str(id_cor)))
     conexao.commit()
     cursor.close()
     conexao.close()
@@ -567,6 +567,7 @@ def menu_blusas():
                 cadastrar_blusa()
     
             elif menu =='2':
+                listar_blusas()
                 listar_blusas_tamanhos()
                 listar_blusas_tecidos()
                 listar_blusas_cores()
